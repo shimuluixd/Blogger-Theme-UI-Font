@@ -1,0 +1,25 @@
+<style>
+/* 🌟 Shimul UI XD Powerful UI Font Injector 🌟
+   Instantly overrides all theme fonts with your custom font,
+   making the entire UI consistent, smooth, and stylish everywhere. */
+
+@font-face {
+  font-family: 'ShimulUXUIFont';
+  src: url('https://cdn.jsdelivr.net/gh/shimuluixd/Blogger-Theme-UI-Font/UIFontXD/ShimulUXUIFont/ShimulUXUIFont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* ensures faster, smoother loading */
+}
+
+/* Global variable for easy management */
+:root {
+  --font-global: 'ShimulUXUIFont', monospace;
+}
+
+/* Force apply font to everything */
+*,
+*::before,
+*::after {
+  font-family: var(--font-global) !important;
+}
+</style>
